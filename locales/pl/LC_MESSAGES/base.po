@@ -1,0 +1,29 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR ORGANIZATION
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2020-11-13 01:25+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: pygettext.py 1.5\n"
+
+
+#: src/main.py:10
+msgid "Cleaning category {0}"
+msgstr "Czyszczenie kategorii {0}"
+
+#: src/main.py:19
+msgid "Removed {0} since it is a supercategory of {1}"
+msgstr "Usunięto {0}, ponieważ jest ona superkategorią {1}"
+
+#: src/main.py:32
+msgid "Category to clear: "
+msgstr "Kategoria do wyczyszczenia: "
+
