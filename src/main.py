@@ -1,4 +1,5 @@
 import gettext
+import sys
 from typing import List
 
 from pywikibot import Category, Site, Page
@@ -15,7 +16,7 @@ def clean(category: Category, supercategories: List[Category]):
 
         for page_category in page.categories():
             if page_category in supercategories:
-                print(_("{1}: Removing {0}, a supercategory of {1}").format(
+                print(_("{0}: Removing {1}, a supercategory of {2}").format(
                     page.title(), page_category.title(), category.title()
                 ))
                 page.change_category(
@@ -34,7 +35,11 @@ def clean(category: Category, supercategories: List[Category]):
 def main():
     site = Site()
 
-    category_name = input(_("Category to clear: "))
+    if len(sys.argv) < 2:
+        category_name = input(_("Category to clear: "))
+    else:
+        category_name = sys.argv[1]
+
     category = Category(site, category_name)
     clean(category, [])
 
