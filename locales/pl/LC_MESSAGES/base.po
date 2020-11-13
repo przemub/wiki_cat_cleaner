@@ -21,7 +21,7 @@ msgstr "Czyszczenie kategorii {0}"
 
 #: src/main.py:19
 msgid "Removed {0} since it is a supercategory of {1}"
-msgstr "Usunięto {0}, ponieważ jest ona superkategorią {1}"
+msgstr "Usunięto {0}, ponieważ jest ona nadkategorią {1}"
 
 #: src/main.py:32
 msgid "Category to clear: "
